@@ -25,7 +25,7 @@ resource "aws_subnet" "private_subnet_2" {
 }
 
 resource "aws_db_subnet_group" "example_db_subnet_group" {
-  name       = "example-db-subnet-group"  # Adjusted subnet group name
+  name       = "example-db-subnet-group"  
   subnet_ids = [
     aws_subnet.private_subnet_1.id,
     aws_subnet.private_subnet_2.id
